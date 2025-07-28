@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイブックライブラリ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="password-screen" class="password-screen active">
+        <div class="password-box">
+            <img src="https://via.placeholder.com/80" alt="Apple ID Icon" class="apple-id-icon">
+            <h2>Apple IDでサインイン</h2>
+            <p>ライブラリを表示するにはパスワードが必要です。</p>
+            <input type="password" id="password-input" placeholder="パスワード">
+            <button id="login-button">続ける</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+
+    <div id="book-library" class="book-library hidden">
+        <h1>ようこそ、マイブックライブラリへ</h1>
+        <div class="bookshelf">
+            </div>
+    </div>
+
+    <div id="book-detail-modal" class="book-detail-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="book-open-animation">
+                <div class="book-cover-left"></div>
+                <div class="book-cover-right"></div>
+                <div class="book-page left-page"></div>
+                <div class="book-page right-page"></div>
+            </div>
+            <div class="book-info-display">
+                <h2>本の情報</h2>
+                <p><strong>番号:</strong> <span id="info-number"></span></p>
+                <p><strong>名前:</strong> <span id="info-name"></span></p>
+                <p><strong>融資金額:</strong> <span id="info-loan"></span></p>
+                <p><strong>Email:</strong> <span id="info-email"></span></p>
+                <p><strong>電話番号:</strong> <span id="info-phone"></span></p>
+                <p><strong>LINE ID:</strong> <span id="info-line"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
